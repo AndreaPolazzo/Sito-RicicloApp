@@ -1,0 +1,23 @@
+{
+  "name": "sito-riciclo-app",
+  "version": "1.0.0",
+  "description": "RicicloApp - Landing page per l'app di riciclo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreaPolazzo/Sito-RicicloApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndreaPolazzo/Sito-RicicloApp/issues"
+  },
+  "homepage": "https://github.com/AndreaPolazzo/Sito-RicicloApp#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
