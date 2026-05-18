@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RicicloApp</title>
+<link rel="icon" type="image/png" href="icon.png">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --lime-dark: #8cc63f;
+    --bg: #ffffff;
+    --text: #333333;
+    --muted: #666666;
+    --border: #e0e0e0;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .wrapper {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  /* --- HEADER CON LOGO --- */
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .app-logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px; /* Smussa leggermente gli angoli dell'icona */
+    object-fit: cover;
+  }
+
+  .app-name {
+    font-size: clamp(32px, 8vw, 42px);
+    font-weight: 700;
+    color: var(--text);
+    text-align: center;
+  }
+
+  .app-name span {
+    color: var(--lime-dark);
+  }
+
+  .tagline {
+    font-size: 16px;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+
+  /* --- DOWNLOAD CARDS --- */
+  .dl-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .dl-card {
+    background: #f9f9f9;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: var(--text);
+    transition: background 0.2s, transform 0.1s;
+  }
+
+  .dl-card:hover {
+    background: #f1f1f1;
+    transform: translateY(-2px);
+  }
+
+  .dl-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .dl-label {
+    font-size: 12px;
+    color: var(--muted);
+  }
+
+  .dl-name {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .dl-ext {
+    font-size: 13px;
+    color: var(--lime-dark);
+    font-weight: 700;
+    background: rgba(140, 198, 63, 0.1);
+    padding: 6px 12px;
+    border-radius: 8px;
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <div class="title-container">
+    <img src="icon.png" alt="Logo RicicloApp" class="app-logo">
+    <h1 class="app-name">Riciclo<span>App</span></h1>
+  </div>
+  
+  <p class="tagline">Scatta una foto e scopri subito dove buttarlo. Niente più dubbi.</p>
+
+  <div class="dl-container">
+    <a class="dl-card" href="RicicloApp.apk" download>
+      <div class="dl-info">
+        <p class="dl-label">Per Android</p>
+        <p class="dl-name">Scarica APK</p>
+      </div>
+      <span class="dl-ext">.apk</span>
+    </a>
+    
+        <p class="dl-name">File IPA in arrivo prossimamente...</p>
+      </div>
+    </a>
+  </div>
+
+  <footer>fatto con il 💚 per l'ambiente · RicicloApp 2026</footer>
+
+</div>
+</body>
+</html>
